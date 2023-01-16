@@ -15,7 +15,24 @@
 .player-container{
     height: 80%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.player-container{
+    position: relative;    
+}
+.player-container svg{
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+}
+
 .time-select{
     background-color: lightskyblue;
 }
@@ -26,6 +43,12 @@
     background-color: lightslategray;
 }
 
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: aliceblue;
+    font-size: 50px;
+}
 video{
     display: none;
 }
