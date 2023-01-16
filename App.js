@@ -12,7 +12,7 @@ const app = () => {
     const outlineLength = outline.getTotalLength();
     
     //Duration
-    let fDuration = 500;
+    let fDuration = 300;
 
     outline.style.strokeDasharray = outlineLength;
     outline.style.strokeDashoffset = outlineLength;
@@ -46,7 +46,7 @@ const app = () => {
     outline.style.strokeDashoffset = outlineLength - (currentTime/fDuration) * outlineLength;
     
     //animate the text
-
+    timeDisplay.textContent = `${minutes}:${seconds}`;
     }
 };
 
