@@ -34,6 +34,18 @@ const app = () => {
             play.src = './svg/play.svg';
         }
     } 
+
+    //animated the circle
+    song.ontimeupdate = () =>{
+        let currentTime = song.currentTime;
+        let elapse = fDuration - currentTime;
+        let seconds = Math.floor(elapse % 60);
+        let minutes = Math.floor(elapse / 60);
+    }
+
+    //animate the circle
+
+
 };
 
 app();
