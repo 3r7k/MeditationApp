@@ -41,11 +41,13 @@ const app = () => {
         let elapse = fDuration - currentTime;
         let seconds = Math.floor(elapse % 60);
         let minutes = Math.floor(elapse / 60);
-    }
-
+    
     //animate the circle
+    outline.style.strokeDashoffset = outlineLength - (currentTime/fDuration) * outlineLength;
+    
+    //animate the text
 
-
+    }
 };
 
 app();
