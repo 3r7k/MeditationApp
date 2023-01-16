@@ -25,3 +25,7 @@
 .player-container{
     background-color: lightslategray;
 }
+
+video{
+    display: none;
+}
