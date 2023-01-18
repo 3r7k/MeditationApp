@@ -32,10 +32,14 @@ const app = () => {
     checkPlaying(song);
   });
 
+  //resert time
+  
+
   //select sound
   timeSelect.forEach((option) => {
     option.addEventListener("click", function () {
       fDuration = this.getAttribute("data-time");
+      song.currentTime = 0;
       timeDisplay.textContent = `0${Math.floor(fDuration / 60)}:${Math.floor(
         fDuration % 60
       )}0`;
